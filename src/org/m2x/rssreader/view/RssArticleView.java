@@ -272,7 +272,7 @@ public class RssArticleView extends WebView {
         setBackgroundColor(Color.parseColor(sBackgroundColor));
 
         // Text zoom level from preferences
-        int fontSize = Integer.parseInt(PrefUtils.getString(PrefUtils.FONT_SIZE, "10"));
+        int fontSize = Integer.parseInt(PrefUtils.getString(PrefUtils.FONT_SIZE, "20"));
         if (fontSize != 0) {
             getSettings().setDefaultFontSize(fontSize);
         }
