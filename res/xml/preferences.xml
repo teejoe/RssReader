@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/appearance">   
+	    <ListPreference
+	        android:key="pref_theme"
+	        android:title="@string/pref_theme"
+	        android:summary="@string/pref_theme_summ"
+	        android:entries="@array/pref_theme_entries"
+	        android:entryValues="@array/pref_theme_entry_values"
+	        android:dialogTitle="@string/pref_theme_dialog_title"
+	        android:defaultValue="default" />
+	    <ListPreference
+	        android:key="pref_font_size"
+	        android:title="@string/pref_font_size"
+	        android:summary="@string/pref_font_size_summ"
+	        android:entries="@array/pref_font_size_entries"
+	        android:entryValues="@array/pref_font_size_values"
+	        android:dialogTitle="@string/pref_font_size"
+	        android:defaultValue="20" />
+	</PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="@string/refresh">
+        <CheckBoxPreference
+            android:key="pref_auto_refresh_enabled"
+            android:title="@string/pref_auto_refresh_enabled"
+            android:summary="@string/pref_auto_refresh_enabled_summ"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_auto_refresh_only_on_wifi"
+            android:title="@string/pref_auto_refresh_only_on_wifi"
+            android:summary="@string/pref_auto_refresh_only_on_wifi_summ"
+            android:defaultValue="false"
+            android:dependency="pref_auto_refresh_enabled" />
+        <ListPreference
+            android:key="pref_auto_refresh_interval"
+            android:title="@string/pref_auto_refresh_interval"
+            android:summary="@string/pref_auto_refresh_interval_summ"
+            android:entries="@array/pref_auto_refresh_interval_entries"
+            android:entryValues="@array/pref_auto_refresh_interval_values"
+            android:dialogTitle="@string/pref_auto_refresh_interval"
+            android:defaultValue="60"
+            android:dependency="pref_auto_refresh_enabled" />
+        <CheckBoxPreference
+            android:key="pref_refresh_on_open"
+            android:title="@string/pref_refresh_on_open"
+            android:summary="@string/pref_refresh_on_open_summ"
+            android:defaultValue="true" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+	    android:title="@string/notification">
+	    <CheckBoxPreference
+	        android:key="pref_push_notification"
+	        android:title="@string/pref_push_notification"
+	        android:summary="@string/pref_push_notification_summ"
+	        android:defaultValue="true" />
+	    <RingtonePreference
+	        android:key="pref_notifications_ringtone"
+	        android:title="@string/pref_notification_ringtone"
+            android:summary="@string/pref_notification_ringtone_summ"	        
+            android:ringtoneType="notification"
+            android:dependency="pref_push_notification" />
+        <CheckBoxPreference
+            android:key="pref_notifications_vibrate"
+            android:title="@string/pref_notification_vibrate"
+            android:summary="@string/pref_notification_vibrate_summ"
+            android:dependency="pref_push_notification" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>

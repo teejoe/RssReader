@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false" >
+    
+    <!-- The Channel list fragment container -->
+    <FrameLayout
+        android:id="@+id/channel_list"
+        android:layout_width="240dip"
+        android:layout_height="match_parent" />
+    
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="4dip"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:contentDescription="@string/contentDescription" />
+    
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/rss_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+</LinearLayout>

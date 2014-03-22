@@ -1,0 +1,91 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    <!-- Defaul Theme of the Application -->
+    <style name="AppTheme.Default" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/ActionBar.Default</item>
+        <item name="android:windowBackground">@color/background_theme_default</item>
+        <item name="android:colorBackground">@color/background_theme_default</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Default</item>
+    </style>
+    
+    <!-- Light Theme of the Application -->
+    <style name="AppTheme.Light" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/ActionBar.Light</item>
+        <item name="android:windowBackground">@color/background_theme_light</item>
+        <item name="android:colorBackground">@color/background_theme_light</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Light</item>
+    </style>
+    
+    <!-- Dark Theme of the Application -->
+    <style name="AppTheme.Dark" parent="Theme.Sherlock">
+        <item name="actionBarStyle">@style/ActionBar.Dark</item>
+        <item name="android:windowBackground">@color/background_theme_dark</item>
+        <item name="android:colorBackground">@color/background_theme_dark</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Dark</item>
+    </style>
+
+    
+    <!-- Default action bar style -->
+    <style name="ActionBar.Default" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@color/actionbar_background_theme_default</item>
+        <item name="android:background">@color/actionbar_background_theme_default</item>
+        <item name="backgroundSplit">@color/actionbar_background_theme_default</item>
+    </style>
+    
+    <!-- Light action bar style -->
+    <style name="ActionBar.Light" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@color/actionbar_background_theme_light</item>
+        <item name="android:background">@color/actionbar_background_theme_light</item>
+        <item name="backgroundSplit">@color/actionbar_background_theme_light</item>
+    </style>
+    
+    <!-- Dark action bar style -->
+    <style name="ActionBar.Dark" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@color/actionbar_background_theme_dark</item>
+        <item name="android:background">@color/actionbar_background_theme_dark</item>
+        <item name="backgroundSplit">@color/actionbar_background_theme_dark</item>
+    </style>
+    
+    <!-- Action button style -->
+    <style name="ActionButtonStyle" parent="Widget.Sherlock.ActionButton">
+        <item name="android:padding">0dip</item>
+    </style>
+    
+    
+    <!-- Default theme style of the ListView -->
+    <style name="ListViewStyle.Default" parent="android:style/Widget.ListView.White">
+        <item name="android:listSelector">@drawable/list_selector_theme_default</item>
+        <item name="android:drawSelectorOnTop">false</item>
+    </style>
+    
+    <!-- Dark theme style of the ListView -->
+    <style name="ListViewStyle.Dark" parent="android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/list_selector_theme_dark</item>
+        <item name="android:drawSelectorOnTop">false</item>
+    </style>
+    
+    <!-- Light theme style of the ListView -->
+    <style name="ListViewStyle.Light" parent="android:style/Widget.ListView.White">
+        <item name="android:listSelector">@drawable/list_selector_theme_light</item>
+        <item name="android:drawSelectorOnTop">false</item>
+    </style>
+
+</resources>

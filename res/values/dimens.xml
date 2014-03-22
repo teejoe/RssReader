@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- dimens of the channel list -->
+    <dimen name="channel_list_icon_size">20dp</dimen>
+    <dimen name="channel_list_padding">10dip</dimen>
+    <dimen name="channel_list_normal_text_size">20sp</dimen>
+    <dimen name="channel_list_title_text_size">16sp</dimen>
+    <dimen name="channel_list_count_text_size">20sp</dimen>
+
+    
+    <!-- dimens of the rss item list -->
+    <dimen name="rss_list_text_size_small">14sp</dimen>
+    <dimen name="rss_list_text_size_normal">18sp</dimen>
+    <dimen name="rss_list_check_box_size">15dip</dimen>
+    
+    <!-- dimens of the rss detail info fragment -->
+    <dimen name="rss_detail_text_size_small">14sp</dimen>
+    <dimen name="rss_detail_text_size_normal">16sp</dimen>
+    <dimen name="rss_detail_text_size_big">18sp</dimen>
+
+</resources>

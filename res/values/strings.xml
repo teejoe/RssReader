@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RSS订阅器</string>
+    <string name="action_settings">设置</string>
+	<string name="add">添加</string>
+	<string name="contentDescription">RSS订阅器</string>
+	<string name="refresh">更新</string>
+	<string name="menu">菜单</string>
+	<string name="edit">编辑</string>
+	<string name="delete">删除</string>
+	<string name="browse">浏览</string>
+	<string name="star">加星标</string>
+	<string name="no_entry">没有条目</string>
+	<string name="no_comments_link">评论链接为空</string>
+	<string name="open_comments_fail">无法打开评论链接</string>
+	<string name="hint_press_back_key">再按一次退出程序</string>
+	<string name="feed_title">标题</string>
+	<string name="feed_url">订阅网址</string>
+	<string name="input_feed_title">输入RSS标题</string>
+	<string name="input_feed_url">输入RSS订阅网址</string>
+	<string name="import_from_opml">从OPML导入</string>
+	<string name="export_to_opml">导出OPML</string>
+	<string name="choose_opml_file">选择OPML文件</string>
+	<string name="opml_export_to">OPML导出到</string>
+	<string name="pref_theme">皮肤</string>
+	<string name="pref_theme_summ">设置界面皮肤</string>
+	<string name="pref_font_size">字体大小</string>
+	<string name="pref_font_size_summ">设置RSS文档浏览页面字体大小</string>
+	<string name="pref_push_notification">显示RSS更新提示</string>
+	<string name="pref_push_notification_summ">更新RSS频道成功后，在通知栏显示通知</string>
+	<string name="pref_auto_refresh">自动更新设置</string>
+	<string name="pref_auto_refresh_summ">设置自动更新的网络条件</string>
+	<string name="pref_notification_ringtone">通知铃声</string>
+	<string name="pref_notification_ringtone_summ">通知铃声</string>
+	<string name="pref_notification_vibrate">震动</string>
+    <string name="pref_notification_vibrate_summ">通知时是否震动</string>
+    <string name="pref_refresh_on_open">开启时更新</string>
+    <string name="pref_refresh_on_open_summ">开启应用时是否自动更新</string>
+    <string name="pref_auto_refresh_enabled">自动更新</string>
+    <string name="pref_auto_refresh_enabled_summ">是否开启自动更新</string>
+    <string name="pref_auto_refresh_only_on_wifi">Wifi下更新</string>
+    <string name="pref_auto_refresh_only_on_wifi_summ">是否只在开启Wifi时自动更新</string>
+    <string name="pref_auto_refresh_interval">自动更新间隔</string>
+    <string name="pref_auto_refresh_interval_summ">设置自动更新间隔时间</string>
+             
+	<string name="pref_theme_dialog_title">选择一个皮肤</string>
+	<string name="appearance">外观</string>
+	<string name="notification">通知</string>
+	<string name="rssreader_feeds">RSS消息</string>
+    <string name="error_feed_error">RSS频道错误</string>
+    <string name="error_feed_process">RSS频道处理错误</string>
+    <string name="error_feed_url_exists">RSS频道已存在</string>
+    <string name="error_network_access_problem">网络无法连接</string>
+    <string name="favorites">星标条目</string>
+    <string name="all">所有条目</string>
+    <string name="update">最后更新</string>
+    <string name="never">未更新</string>
+    <string name="error">更新错误</string>
+    <string name="storage_can_not_access">存储器暂时不可访问</string>
+    <string name="open_comment">打开评论</string>
+    <string name="open_link">打开链接</string>
+    <string name="open_link_failed">打开链接失败</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    
+    <!-- Color strings, used to set theme for RssArticleView.  -->
+    <string name="background_theme_light">#ffffff</string>
+    <string name="background_theme_dark">#222222</string>
+    <string name="background_theme_default">#fff8dc</string>
+    <string name="text_color_theme_light">#000000</string>
+    <string name="text_color_theme_dark">#c0c0c0</string>
+    <string name="text_color_theme_default">#000000</string>
+    <string name="button_color_theme_light">#ddecf1</string>
+    <string name="button_color_theme_dark">#476773</string>
+    <string name="button_color_theme_default">#ddecf1</string>
+    <string name="subtitle_color_theme_light">#666666</string>
+    <string name="subtitle_color_theme_dark">#8c8c8c</string>
+    <string name="subtitle_color_theme_default">#666666</string>
+    
+    <plurals name="number_of_new_entries">
+        <item quantity="one">1个条目已同步</item>
+        <item quantity="other">%d个条目已同步</item>
+    </plurals>
+</resources>

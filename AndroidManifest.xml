@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.m2x.rssreader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+    
+
+    <application
+        android:name="org.m2x.rssreader.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:configChanges="locale"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        
+        <service android:name=".service.RefreshService" />
+        <service android:name=".service.FetcherService" />
+
+        <provider
+            android:name=".provider.FeedDataProvider"
+            android:authorities="org.m2x.rssreader.provider.FeedData"
+            android:exported="false" />
+        
+        <activity
+            android:name="org.m2x.rssreader.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="org.m2x.rssreader.activity.RssItemListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="org.m2x.rssreader.activity.RssArticleActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="org.m2x.rssreader.activity.AddChannelActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="org.m2x.rssreader.activity.EditChannelActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="org.m2x.rssreader.activity.PreferenceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <receiver android:name=".service.RefreshService$RefreshAlarmReceiver" />
+        
+    </application>
+
+</manifest>

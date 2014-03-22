@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.1">
+<body>
+    <outline title="新闻" >
+        <outline title="网易头条新闻" type="rss" xmlUrl="http://news.163.com/special/00011K6L/rss_newstop.xml" retrieveFullText='false'/>
+        <outline title="新浪科技" type="rss" xmlUrl="http://rss.sina.com.cn/tech/index.shtml" retrieveFullText='false'/>        
+        <outline title="新浪娱乐" type="rss" xmlUrl="http://rss.sina.com.cn/ent/index.shtml" retrieveFullText='false'/>        
+    </outline>
+    
+    <outline title="博客" >
+        <outline title="月光博客" type="rss" xmlUrl="http://feed.williamlong.info/" retrieveFullText='false'/>
+        <outline title="互联网那些事" type="rss" xmlUrl="http://www.alibuybuy.com/feed" retrieveFullText='false'/>        
+    </outline>
+</body>
+</opml>

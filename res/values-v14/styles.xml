@@ -1,0 +1,64 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+    
+    <!-- Defaul Theme of the Application -->
+    <style name="AppTheme.Default" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/ActionBar.Default</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Default</item>
+        <item name="android:windowBackground">@color/background_theme_default</item>
+        <item name="android:colorBackground">@color/background_theme_default</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Default</item>
+    </style>
+    
+    <!-- Light Theme of the Application -->
+    <style name="AppTheme.Light" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/ActionBar.Light</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Light</item>
+        <item name="android:windowBackground">@color/background_theme_light</item>
+        <item name="android:colorBackground">@color/background_theme_light</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Light</item>
+    </style>
+    
+    <!-- Dark Theme of the Application -->
+    <style name="AppTheme.Dark" parent="Theme.Sherlock">
+        <item name="actionBarStyle">@style/ActionBar.Dark</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Dark</item>
+        <item name="android:windowBackground">@color/background_theme_dark</item>
+        <item name="android:colorBackground">@color/background_theme_dark</item>
+        <item name="android:listViewStyle">@style/ListViewStyle.Dark</item>
+    </style>
+
+    
+    <!-- Default theme action bar style -->
+    <style name="ActionBar.Default" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@color/actionbar_background_theme_default</item>
+        <item name="android:background">@color/actionbar_background_theme_default</item>
+        <item name="backgroundSplit">@color/actionbar_background_theme_default</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_theme_default</item>
+    </style>
+    
+    <!-- Light theme action bar style -->
+    <style name="ActionBar.Light" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@color/actionbar_background_theme_light</item>
+        <item name="android:background">@color/actionbar_background_theme_light</item>
+        <item name="backgroundSplit">@color/actionbar_background_theme_light</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_theme_light</item>
+    </style>
+    
+    <!-- Dark theme action bar style -->
+    <style name="ActionBar.Dark" parent="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@color/actionbar_background_theme_dark</item>
+        <item name="android:background">@color/actionbar_background_theme_dark</item>
+        <item name="backgroundSplit">@color/actionbar_background_theme_dark</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_theme_dark</item>
+    </style>
+    
+</resources>

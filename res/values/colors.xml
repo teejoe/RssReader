@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_background_theme_default">#ff8cb441</color>
+    <color name="actionbar_background_theme_light">#ffaaaaaa</color>
+    <color name="actionbar_background_theme_dark">#ff333333</color>
+    
+    <color name="background_theme_light">#ffffffff</color>
+    <color name="background_theme_dark">#ff222222</color>
+    <color name="background_theme_default">#fffff8dc</color>
+    
+    <color name="text_color_theme_light">#ff000000</color>
+    <color name="text_color_theme_dark">#ffbbbbbb</color>
+    <color name="text_color_theme_default">#ff000000</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#ffdddddd</color>
+    <color name="gray">#ffaaaaaa</color>
+    <color name="dark_gray">#ff888888</color>
+    <color name="black">#ff222222</color>
+    <color name="light_blue">#ff80bfff</color>
+    <color name="light_green">#ff80ff80</color>
+    
+    <color name="list_selector_background_default">#ff9dc552</color>
+    <color name="list_selector_background_dark">#ffaaaaaa</color>
+    <color name="list_selector_background_light">#ffaaaaaa</color>
+   
+</resources>
