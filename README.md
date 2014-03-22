@@ -1,4 +1,4 @@
 RssReader
 =========
 
-A simple RSS reader
+A simple RSS reader for Android.
