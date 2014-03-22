@@ -52,7 +52,6 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.text.Html;
 import android.text.TextUtils;
-import android.util.Log;
 
 import org.m2x.rssreader.Constants;
 import org.m2x.rssreader.MainApplication;
@@ -203,8 +202,7 @@ public class RssAtomParser extends DefaultHandler {
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) 
     		throws SAXException {
-    	Log.v("m2x", "<" + localName + ">");
-    	
+
         if (TAG_UPDATED.equals(localName)) {
             mUpdatedTagEntered = true;
             mDateStringBuilder = new StringBuilder();
@@ -337,8 +335,7 @@ public class RssAtomParser extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-    	Log.v("m2x", "</" + localName + ">");
-    	
+
         if (TAG_TITLE.equals(localName)) {
             mTitleTagEntered = false;
         } else if ((TAG_DESCRIPTION.equals(localName) && !TAG_MEDIA_DESCRIPTION.equals(qName)) 
